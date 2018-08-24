@@ -107,7 +107,7 @@ int main()
 		std::cin >> nmb2;
 
 	}
-
+	//pronmle 3.
 	{
 
 	}
