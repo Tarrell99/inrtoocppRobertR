@@ -66,7 +66,7 @@ int main()
 			//Do Stuff
 			std::cout << lhs - rhs << std::endl;
 			break;
-		defaut:
+		default:
 			std::cout << "invalid math operation\n";
 		}
 
@@ -102,7 +102,7 @@ int main()
 	{
 		int nmb1;
 		int nmb2;
-		std::cout << "pick numbers one / two / three" << std::endl;
+		std::cout << "pick two numbers one , two or three" << std::endl;
 		std::cin >> nmb1;
 		std::cin >> nmb2;
 		if (nmb1 = 3)
@@ -130,6 +130,7 @@ int main()
 	//pronmle 4
 	{
 		int choice;
+		std::cin >> choice;
 		switch (choice)
 		{
 		case 1:
@@ -151,7 +152,12 @@ int main()
 	}
 	//probmle 5.
 	{
-
+		int X;
+		int Y;
+		std::cout << "What is X" << std::endl;
+		std::cin >> X;
+		Y = (X == 0) ? 0 : (10 / X);
+		std::cout << "Y is  " << Y << std::endl; 
 	}
 	//probmle 6
 	{
@@ -179,13 +185,14 @@ int main()
 			std::cout << lhs % rhs << std::endl;
 			break;
 
-		defaut:
+		default:
 			std::cout << "invalid math operation\n";
 		}
 	}
 	//probmle 7 
 	{
 		int choice;
+		std::cin >> choice;
 		switch (choice)
 		{
 		case 1:
@@ -228,7 +235,7 @@ int main()
 	}
 	//probmle 8
 	{
-		int a = false;
+		int a = true;
 		int b = true;
 		int c = false;
 		int d = true;
