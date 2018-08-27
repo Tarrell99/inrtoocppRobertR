@@ -115,6 +115,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Arrays.cpp" />
     <ClCompile Include="comditionl statemements.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
