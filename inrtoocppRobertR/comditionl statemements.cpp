@@ -66,7 +66,7 @@ int main()
 			//Do Stuff
 			std::cout << lhs - rhs << std::endl;
 			break;
-		defaut:
+		default:
 			std::cout << "invalid math operation\n";
 		}
 
@@ -102,13 +102,162 @@ int main()
 	{
 		int nmb1;
 		int nmb2;
-		std::cout << "pick two numbers" << std::endl;
+		std::cout << "pick two numbers one , two or three" << std::endl;
 		std::cin >> nmb1;
 		std::cin >> nmb2;
+		if (nmb1 = 3)
+		{
+			std::cout << " 3 " << std::endl;
+		}
+		else if (nmb2 = 3 )
+		{
+			std::cout << " 3 " << std::endl;
+		}
+		else if (nmb1 = 2)
+		{
+			std::cout << " 2 " << std::endl;
+		}
+		else if (nmb2 = 2)
+		{
+			std::cout << " 2 " << std::endl;
+		}
 
 	}
 	//pronmle 3.
 	{
+
+	}
+	//pronmle 4
+	{
+		int choice;
+		std::cin >> choice;
+		switch (choice)
+		{
+		case 1:
+				std::cout << 1 << std::endl;
+			break;
+		case 2:
+			std::cout << 2 << std::endl;
+			break;
+		case 3:
+			std::cout << 3 << std::endl;
+			break;
+		case 4:
+			std::cout << 4 << std::endl;
+			break;
+		default:
+			std::cout << "Invalid" << std::endl;
+
+		}
+	}
+	//probmle 5.
+	{
+		int X;
+		int Y;
+		std::cout << "What is X" << std::endl;
+		std::cin >> X;
+		Y = (X == 0) ? 0 : (10 / X);
+		std::cout << "Y is  " << Y << std::endl; 
+	}
+	//probmle 6
+	{
+		int lhs, rhs;
+		char op;
+		std::cout << "Etter two numbers.\n";
+		std::cin >> lhs >> rhs;
+		std::cout << " do you wanna (+) , (-) , (/) , (*) or (%) ?\n";
+		std::cin >> op;
+		switch (op)
+		{
+		case '+':
+			std::cout << lhs + rhs << std::endl;
+			break;
+		case '-':
+			std::cout << lhs - rhs << std::endl;
+			break;
+		case '/':
+			std::cout << lhs / rhs << std::endl;
+			break;
+		case '*':
+			std::cout << lhs * rhs << std::endl;
+			break;
+		case '%':
+			std::cout << lhs % rhs << std::endl;
+			break;
+
+		default:
+			std::cout << "invalid math operation\n";
+		}
+	}
+	//probmle 7 
+	{
+		int choice;
+		std::cin >> choice;
+		switch (choice)
+		{
+		case 1:
+			std::cout << "January 31" << std::endl;
+			break;
+		case 2:
+			std::cout << "February 28" << std::endl;
+			break;
+		case 3:
+			std::cout << "March 31" << std::endl;
+			break;
+		case 4:
+			std::cout << "April 30" << std::endl;
+			break;
+		case 5:
+			std::cout << "May 31" << std::endl;
+			break;
+		case 6:
+			std::cout << "June 30" << std::endl;
+			break;
+		case 7:
+			std::cout << "July 31" << std::endl;
+			break;
+		case 8:
+			std::cout << "Augst 31" << std::endl;
+			break;
+		case 9:
+			std::cout << " September 30" << std::endl;
+			break;
+		case 10:
+			std::cout << " October 31" << std::endl;
+			break;
+		case 11:
+			std::cout << "November 30" << std::endl;
+			break;
+		case 12:
+			std::cout << "Decmber 31 " << std::endl;
+			break;
+		}
+	}
+	//probmle 8
+	{
+		int a = true;
+		int b = true;
+		int c = false;
+		int d = true;
+		int e = true;
+		int f = false;
+		int g = false;
+		int h = true;
+		int i = false;
+		int j = true;
+		// for h/i im sure what it would be so i put one of each.
+
+
+
+			
+	}
+	//probmle 9 
+	{
+		int a = true;
+		int b = true;
+		int c = false;
+		int d = true;
+		int e = true;
 
 	}
 		system("pause");
