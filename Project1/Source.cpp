@@ -1,14 +1,14 @@
 #include <iostream>
 int main()
 {
-	//{
+	{
 	//	////char name[] = "Robert";
 	//////int X = 0;
 	//////for (int i = 0; i < 6; i++);
 	///////*{
 	////	std::cout << name << 	
 	////}*/
-	//}
+	}
 	//1promble
 	{
 		char name[] = "AIEUS";
@@ -33,7 +33,38 @@ int main()
 		{
 			count2++;
 		}
-		
+		for (int i = 0; i < 6; i++)
+		{
+			for (int j = 0; j < 6; j++)
+			{
+				if (i == j)
+				{
+					std::cout << "they are the same" << std::endl;
+				}
+			}
+		}
 	}
+	//home work
+	{
+		char firstName[] 
+
+		
+
+
+
+
+
+
+
+	}
+	//home work two
+	{
+	}
+	//home work 
+
+	
+
+
+	
 	system("pause");
 }
