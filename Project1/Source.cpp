@@ -46,7 +46,7 @@ int main()
 	}
 	//home work
 	{
-		char firstName[] 
+		char firstName[] = "bob";
 
 		
 
