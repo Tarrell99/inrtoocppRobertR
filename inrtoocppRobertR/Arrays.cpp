@@ -23,11 +23,11 @@ int main()
 		}
 	}
 
-	{
+	/*{
 		int input[9];
-		for (int i)
+		for (int i);
 
-	}
+	}*/
 
 	//problem 1
 	{
