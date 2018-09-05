@@ -28,15 +28,36 @@ void PrintValvesBetween(int low, int high)
 }
 int ArraySum(int arr[], int size)
 {
+	/*int myArray[4] = { 4,3,2,1 };
+	int sum = 0;
+
+	for (int i = 0; i < 4; i++)
+	{
+		sum = myArray[i] + sum;
+	}*/
 	int sum = 0;
 }
-
+void RevArray(int arr[], int size)
+{
+	int count = 0;
+	
+}
 int main()
 {
 	print ("hi");
 	bool isMultpTest = IsMultpleOfThree(4);
 	printValvesToTen();
+
 	int myArray[4] = { 4,3,2,1 };
+	int sum = 0;
+
+	for (int i = 0; i < 4; i++)
+	{
+		sum = myArray[i] + sum;
+	}
+
+
+
 	system("pause");
 	return 0;
 }
