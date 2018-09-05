@@ -56,7 +56,7 @@ int main()
 		sum = myArray[i] + sum;
 	}
 
-
+	///////
 
 	system("pause");
 	return 0;
