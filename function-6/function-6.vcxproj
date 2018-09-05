@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{4A15C1FE-77F9-4D80-A213-B2DC3686A933}</ProjectGuid>
-    <RootNamespace>inrtoocppRobertR</RootNamespace>
+    <ProjectGuid>{9981F261-AAE4-4530-80AB-CEE38D03A0D3}</ProjectGuid>
+    <RootNamespace>function6</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -115,7 +115,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="comditionl statemements.cpp" />
+    <ClCompile Include="..\inrtoocppRobertR\function.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
