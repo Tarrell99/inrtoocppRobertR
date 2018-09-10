@@ -4,12 +4,12 @@
 struct Item
 {
 	std::string name;
-	int price;
+	int price = 100;
 };
 struct Stock
 {
 	Item item;
-	int quantity;
+	int quantity = 10;
 };
 struct Shop
 {
@@ -23,7 +23,7 @@ struct Buyer
 	{
 		return 0;
 	}
-	int money;
+	int money = 100;
 };
 int main()
 {
@@ -40,6 +40,18 @@ int main()
 	Stock swordStock;
 	walgreens.Swords = swordStock;
 	josh.Buy(walgreens.Swords);
+	sword.price
+	josh.Buy(sword);
+	
+	for (int i = 0; i < 11; i++)
+	{
+		for (int j = 10; j = 0; j--)
+		{
+			std::cout << "you bougthe a sword" << std::endl;
+		}
+		
+	}
+	
 
 
 }
