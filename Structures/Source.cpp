@@ -40,17 +40,11 @@ int main()
 	Stock swordStock;
 	walgreens.Swords = swordStock;
 	josh.Buy(walgreens.Swords);
-	sword.price
-	josh.Buy(sword);
 	
-	for (int i = 0; i < 11; i++)
-	{
-		for (int j = 10; j = 0; j--)
-		{
-			std::cout << "you bougthe a sword" << std::endl;
-		}
-		
-	}
+
+	
+	
+	
 	
 
 
