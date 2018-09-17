@@ -14,7 +14,8 @@ int main()
 	std::cout << myVariable << std::endl;
 	system("pause");
 	/*Create another reference to the same integer and prove to yourself that both
-		references are referring to the same int.*/	int &myVariable2 = variable;
+		references are referring to the same int.*/
+	int &myVariable2 = variable;
 	std::cout << myVariable2 << std::endl;
 	system("pause");
 }
