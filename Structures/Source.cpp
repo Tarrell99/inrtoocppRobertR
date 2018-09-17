@@ -3,7 +3,7 @@
 
 struct Item
 {
-	std::string name;
+	std::string name; 
 	int price = 100;
 };
 struct Stock
