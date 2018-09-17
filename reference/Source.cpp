@@ -19,7 +19,7 @@ void changeIt(int& rhs, int& lhs)
 int main()
 //#1
 {
-//	int variable = 10;
+//	int variable = 10; 
 //	std::cout << variable << std::endl;
 //	system("pause");
 //
