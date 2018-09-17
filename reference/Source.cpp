@@ -1,13 +1,13 @@
 #include<iostream>
+//
+//struct MyStruct
+//{
+//	int rhs = 2;
+//	int lhs = 2;
+//
+//};
 
-struct MyStruct
-{
-	int rhs = 2;
-	int lhs = 2;
-
-};
-
-void changeIt(int rhs, int lhs)
+void changeIt(int& rhs, int& lhs)
 {
 	rhs = 2;
 	lhs = 1;
@@ -37,7 +37,8 @@ int main()
 //
 //
 //	/*Create another reference to the same integer and prove to yourself that both
-//		references are referring to the same int.*///	int &myVariable2 = variable;
+//		references are referring to the same int.*/
+//	int &myVariable2 = variable;
 //	std::cout << myVariable2 << std::endl;
 //
 //
@@ -55,8 +56,10 @@ int main()
 
 
 	//#2
-
-	std::cout << changeIt << std::endl;
+	int changeIt2 = 78;
+	int changeIt3 = 79;
+	changeIt(changeIt2, changeIt3);
+	std::cout << changeIt2 << changeIt3 << std::endl;
 
 	system("pause");
 
