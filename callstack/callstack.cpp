@@ -9,7 +9,7 @@ private:
 public:
 	bool isEmpty()
 	{
-
+		for(isEmpty > 1)
 	}
 	
 	int top()
