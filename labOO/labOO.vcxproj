@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{C88F6D99-4A43-4D08-A952-8A2673CD1144}</ProjectGuid>
-    <RootNamespace>callstack</RootNamespace>
+    <ProjectGuid>{48644DA6-E346-4C37-BC7E-2CA44A4BE2C9}</ProjectGuid>
+    <RootNamespace>labOO</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -115,8 +115,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="callstack.cpp" />
-    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Hero.cpp" />
+    <ClCompile Include="Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game.cpp" />
+    <ClInclude Include="Hero.h" />
+    <ClInclude Include="Stack.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Stack.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
