@@ -2,27 +2,23 @@
 
 void Hero::Fight(Hero & other)
 {
-	
+	other.TakeDamage(m_Power);
+
 }
 
-bool Hero::isAlive()
+	
+
+	bool Hero::isAlive()
 {
 	if (m_Health <= 0)
 	{
-		return false;
-	}
-	else
-	{
 		return true;
 	}
+	return false;
 }
 
-void Hero::TakeDamage(int)
+void Hero::TakeDamage(int effct)
 {
-	int temp;//Hero1
-	int* myDamage = &temp;
-	while (myDamage = &temp)
-	{
-		m_Health - m_Power;
-	}
+	m_Health - effct;
+	std::cout << "fighter took..." << effct << "damsge" << std::endl;
 }

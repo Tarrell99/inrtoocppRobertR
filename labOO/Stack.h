@@ -4,7 +4,7 @@
 class Stack
 {
 private:
-	Hero mData[20];//array
+	Hero mData[2];//array
 	int mCount;// index
 
 public:
