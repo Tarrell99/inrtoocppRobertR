@@ -3,7 +3,7 @@
 
 Hero Stack::Top()
 {
-
+	int* myTop = &m_Fighters[0];
 }
 
 
