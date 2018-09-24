@@ -1,1 +1,26 @@
-This is my Hero fight game 
+This is my Fighting game assignment where i attempted to make a fighting simulator.
+
+It would allow you to pick two fighters and have them fight into one is of them has no more HP. 
+
+
+
+To play you need to duble click the application.
+
+(Unfortunately it will not start the fight in any way as far as i can tell.)
+
+Next you would then pick your fighter.
+
+Your fighter would then attack your opponent into one of them HP was redusted to 0.
+
+The winner would then be stated at the with how much HP he had left.
+
+
+
+I was not able to get it to work, the functions i have i work but the call i have do not.
+
+I have the skeleto of the proble but not much meat to make it work.
+
+I am also trying to get a grop of pointers to work but they are coming back red.
+
+In the end none of it works because the functions/pointers  do not work as expected.
+  
