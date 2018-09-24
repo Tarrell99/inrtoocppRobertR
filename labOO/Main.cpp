@@ -1,15 +1,25 @@
 #include "Stack.h"
+#include <time.h>
+#include <cstdlib>
 
 int main()
 {
+	
 	std::cout << "Hero fight game " << std::endl;
+	system("pause");
+	std::cout << "In these game you will be picking a team 'IronMan' or team 'CaptainAmerica' " << std::endl;
+	system("pause");
+	std::cout << "Once you pick your team pushing any nomal key will let you play all the way thouge into a winer or tie is made" << std::endl;
 	system ("pause");
-
-
+	
+	srand(time(0));
 	Hero IronMan;
 	Hero CaptainAmerica;
 	Game* g = new Game();
 	g->Battle(IronMan, CaptainAmerica);
+
+	
+	
 	system("pause");
 	
 	
