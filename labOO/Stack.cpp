@@ -9,11 +9,13 @@ Hero Stack::Top()
 
 
 // pops off the top of the stack to have the hero fight
-bool Stack::Pop(Hero*)
+bool Stack::Pop()
 {
  //if isFull return true pop
-	if (isFull) return true;
-	
+	if (isFull) 
+	{
+		return true;
+	}
 }
 
 // pushes the hero in to the stack and then puts the winner in the winner stack 

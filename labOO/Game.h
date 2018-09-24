@@ -5,5 +5,4 @@ class Game
 {
 public:
 	Hero Battle(Hero& , Hero&);
-
 };
