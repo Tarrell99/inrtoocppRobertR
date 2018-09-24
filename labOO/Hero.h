@@ -4,10 +4,8 @@
 class Hero
 {
 private:
-	int m_Health;
-	int m_Power;
-	int m_Fighters[2]; // array
-	int count = 0; // index
+	int m_Health = 100;
+	int m_Power = 50;
 public:
 	void Fight(Hero&);
 	bool isAlive();
