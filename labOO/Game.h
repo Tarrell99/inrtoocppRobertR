@@ -1,8 +1,9 @@
 #pragma once
-#include "Stack.h"
+#include "Hero.h"
 
 class Game
 {
+public:
 	Hero Battle(Hero& , Hero&);
 
 };

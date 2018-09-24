@@ -12,7 +12,11 @@ int main()
 	system ("pause");
 
 
-	Hero* ironMan = new Hero();
+	Hero IronMan;
+	Hero CaptainAmerica;
+	Game* g = new Game();
+	g->Battle(IronMan, CaptainAmerica);
+	system("pause");
 	
 	
 }

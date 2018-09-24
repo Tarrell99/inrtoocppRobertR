@@ -1,10 +1,12 @@
 #pragma once
-
-#include "Stack.h"
 #include "Game.h"
 
 Hero Game::Battle(Hero &fighter1, Hero &fighter2)
 {
+	if (fighter1 == fighter2)
+	{
+
+	}
 	while (fighter1.isAlive() && fighter2.isAlive())
 	{
 		fighter1.Fight(fighter2);

@@ -10,6 +10,8 @@ public:
 	void Fight(Hero&);
 	bool isAlive();
 	void TakeDamage(int);
-
-
+	bool operator == (Hero & other)
+	{
+		return m_Health == other.m_Health && m_Health == other.m_Health;
+	}
 };
