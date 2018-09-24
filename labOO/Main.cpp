@@ -1,11 +1,5 @@
 #include "Stack.h"
 
-
-
-
-
-
-
 int main()
 {
 	std::cout << "Hero fight game " << std::endl;
@@ -20,11 +14,6 @@ int main()
 	
 	
 }
-
-
-
-
-
 
 // pops both stacks
 //uses these pops to "evaluate" a winner

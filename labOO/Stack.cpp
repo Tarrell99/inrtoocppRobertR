@@ -1,4 +1,3 @@
-#pragma once
 #include "Stack.h"
 
 Hero Stack::Top()
