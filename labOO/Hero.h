@@ -6,7 +6,7 @@ class Hero
 private:
 	int m_Health;
 	int m_Power;
-	char m_Name;
+	const char* m_Name;
 public:
 	Hero();
 	void Fight(Hero& other);
@@ -14,8 +14,9 @@ public:
 	void TakeDamage(int amount);
 	bool operator == (Hero & other);
 	int GetHealth();
-	void changeName();
-	char sayName();
+	void getName(const char*);
+	void sayName();
+	
 	
 
 };

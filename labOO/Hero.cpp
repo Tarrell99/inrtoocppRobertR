@@ -7,7 +7,7 @@ Hero::Hero()
 
 	m_Power;
 
-	m_Name;
+	m_Name = new char [255];
 }
 
 bool Hero::operator == (Hero & other)
@@ -21,20 +21,15 @@ int Hero::GetHealth()
 	return m_Health;
 }
 
-void Hero::changeName()
+void Hero::getName(const char* heroName)
 {
-	char nameing;
-	std::cin >> nameing;
-	m_Name = nameing;
-
+	m_Name = heroName;
 }
 
-char Hero::sayName()
+void Hero::sayName()
 {
-
-	return m_Name;
+	std::cout << m_Name;
 }
-
 
 
 void Hero::Fight(Hero & other)
