@@ -3,7 +3,7 @@
 Hero Stack::Top()
 {
 	Hero* myTop = &mData[0];
-	mCount++;
+	mCount++;                                                                              
 }
 
 

@@ -14,8 +14,8 @@ public:
 	void TakeDamage(int amount);
 	bool operator == (Hero & other);
 	int GetHealth();
-	char changeName();
-	
+	void changeName();
+	char sayName();
 	
 
 };

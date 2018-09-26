@@ -13,6 +13,7 @@ int main()
 	system ("pause");
 	
 	srand(time(0));
+	
 	Hero IronMan;
 	Hero CaptainAmerica;
 	Game* g = new Game();

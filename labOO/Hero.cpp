@@ -7,6 +7,7 @@ Hero::Hero()
 
 	m_Power;
 
+	m_Name;
 }
 
 bool Hero::operator == (Hero & other)
@@ -20,7 +21,15 @@ int Hero::GetHealth()
 	return m_Health;
 }
 
-char Hero::changeName()
+void Hero::changeName()
+{
+	char nameing;
+	std::cin >> nameing;
+	m_Name = nameing;
+
+}
+
+char Hero::sayName()
 {
 
 	return m_Name;
@@ -48,7 +57,7 @@ bool Hero::isAlive()
 void Hero::TakeDamage(int effct)
 {
 	m_Health -= effct;
-	std::cout << "fighter took..." << effct << "damsge" << std::endl;
+	std::cout <<  m_Name << " took..." << effct << "damsge" << std::endl;
 	
 }
 
