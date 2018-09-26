@@ -1,6 +1,6 @@
 #include "Hero.h"
 
-
+//the hp power and name all off heros
 Hero::Hero()
 {
 	m_Health = 100;
@@ -9,18 +9,18 @@ Hero::Hero()
 
 	m_Name = new char [255];
 }
-
+// retrus hp
 bool Hero::operator == (Hero & other)
 {
 	return m_Health == other.m_Health && m_Health == other.m_Health;
 }
-
+// nothing 
 int Hero::GetHealth()
 {
 	
 	return m_Health;
 }
-
+// gets the name form m_name
 void Hero::getName(const char* heroName)
 {
 	m_Name = heroName;

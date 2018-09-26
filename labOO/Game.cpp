@@ -2,21 +2,20 @@
 
 Hero Game::Battle(Hero & fighter1, Hero & fighter2)
 {
-	fighter1.sayName();
-	std::cout << " " << fighter2.GetHealth() << std::endl;
-	fighter2.sayName();
-	std::cout << " " << fighter1.GetHealth() << std::endl;
+
 
 	while (fighter1.isAlive() && fighter2.isAlive())
 	{
-		fighter1.Fight(fighter2);
 		fighter2.Fight(fighter1);
+		fighter1.Fight(fighter2);
+		
 		system("pause");
 
 		fighter1.sayName();
-		std::cout << " " << fighter2.GetHealth() << std::endl;
-		fighter2.sayName();
 		std::cout << " " << fighter1.GetHealth() << std::endl;
+		fighter2.sayName();
+		std::cout << " " << fighter2.GetHealth() << std::endl;
+		
 		system("pause");
 		system("cls");
 	}
