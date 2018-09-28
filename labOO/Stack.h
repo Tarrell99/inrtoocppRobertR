@@ -4,7 +4,7 @@
 class Stack
 {
 private:
-	Hero mData[2];//array
+	Hero mData[4];//array
 	int mCount;// index
 
 public:
@@ -13,7 +13,7 @@ public:
 
 
 	// pops off the top of the stack to have the hero fight
-	bool Pop();
+	bool Pop(Hero*);
 
 	// pushes the hero in to the stack and then puts the winner in the winner stack 
 	bool Push(Hero*);

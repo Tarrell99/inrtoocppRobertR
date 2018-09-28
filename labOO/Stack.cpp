@@ -3,26 +3,33 @@
 Hero Stack::Top()
 {
 	Hero* myTop = &mData[0];
-	mCount++;                                                                              
+	mData[mCount];
+	return mData[mCount];
 }
 
 
-// pops off the top of the stack to have the hero fight
-bool Stack::Pop()
+
+bool Stack::Pop(Hero* Fighter)
 {
- //if isFull return true pop
-	if (isFull) 
-	{
-		return true;
-	}
+	if (mCount = 4)
+	mData[mCount] = *Fighter;
+	mCount = mCount - 1;
+
+	return true;
 }
 
-// pushes the hero in to the stack and then puts the winner in the winner stack 
+// looks at all  the hero in the stack 
 bool Stack::Push(Hero* Fighter)
 {
-	mData[mCount] = *Fighter;
-	mCount = mCount + 1;
-	 
+	if (mCount < 4) 
+	{
+		mData[mCount] = *Fighter;
+		mCount = mCount + 1;
+	}
+	else
+	{
+		return false;
+	}
 }
 
 // tells me if the stack is empty
@@ -38,7 +45,7 @@ bool Stack::isEmpty()
 // tells me if the stack is full
 bool Stack::isFull()
 {
-	if (mCount == 2)
+	if (mCount == 4)
 	{
 		return true;
 	}

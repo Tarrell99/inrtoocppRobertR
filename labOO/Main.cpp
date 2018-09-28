@@ -18,8 +18,13 @@ int main()
 	IronMan.getName("Iron Man");
 	Hero CaptainAmerica;
 	CaptainAmerica.getName("CaptainAmerica");
+	Hero WarMachine;
+	WarMachine.getName("WarMachine");
+	Hero BlackPanther;
+	BlackPanther.getName("BlackPanther");
 	Game* g = new Game();
-	g->Battle(IronMan, CaptainAmerica);
+	g->Battle(IronMan, CaptainAmerica,WarMachine, BlackPanther);
+
 
 	
 	
