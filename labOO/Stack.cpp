@@ -9,12 +9,10 @@ Hero Stack::Top()
 
 
 
-bool Stack::Pop(Hero* Fighter)
+bool Stack::Pop()
 {
-	if (mCount = 4)
-	mData[mCount] = *Fighter;
-	mCount = mCount - 1;
-
+	mData[mCount - 1];
+	mCount--;
 	return true;
 }
 

@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="moring proble.cpp">
+    <ClCompile Include="Moring pomble 9.28.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

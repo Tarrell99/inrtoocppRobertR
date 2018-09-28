@@ -1,5 +1,5 @@
 #pragma once
-#include "Game.h"
+#include "Hero.h"
 
 class Stack
 {
@@ -13,7 +13,7 @@ public:
 
 
 	// pops off the top of the stack to have the hero fight
-	bool Pop(Hero*);
+	bool Pop();
 
 	// pushes the hero in to the stack and then puts the winner in the winner stack 
 	bool Push(Hero*);
