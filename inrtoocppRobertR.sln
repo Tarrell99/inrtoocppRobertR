@@ -31,6 +31,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "week 6", "week 6\week 6.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Num Guessing Game", "Num Guessing Game\Num Guessing Game.vcxproj", "{E7B1AF3B-EA98-474A-932C-0731B1A46520}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tic Tac Toe", "Tic Tac Toe\Tic Tac Toe.vcxproj", "{0F7FD6AF-D198-4337-92BF-F63437F2FF01}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -151,6 +153,14 @@ Global
 		{E7B1AF3B-EA98-474A-932C-0731B1A46520}.Release|x64.Build.0 = Release|x64
 		{E7B1AF3B-EA98-474A-932C-0731B1A46520}.Release|x86.ActiveCfg = Release|Win32
 		{E7B1AF3B-EA98-474A-932C-0731B1A46520}.Release|x86.Build.0 = Release|Win32
+		{0F7FD6AF-D198-4337-92BF-F63437F2FF01}.Debug|x64.ActiveCfg = Debug|x64
+		{0F7FD6AF-D198-4337-92BF-F63437F2FF01}.Debug|x64.Build.0 = Debug|x64
+		{0F7FD6AF-D198-4337-92BF-F63437F2FF01}.Debug|x86.ActiveCfg = Debug|Win32
+		{0F7FD6AF-D198-4337-92BF-F63437F2FF01}.Debug|x86.Build.0 = Debug|Win32
+		{0F7FD6AF-D198-4337-92BF-F63437F2FF01}.Release|x64.ActiveCfg = Release|x64
+		{0F7FD6AF-D198-4337-92BF-F63437F2FF01}.Release|x64.Build.0 = Release|x64
+		{0F7FD6AF-D198-4337-92BF-F63437F2FF01}.Release|x86.ActiveCfg = Release|Win32
+		{0F7FD6AF-D198-4337-92BF-F63437F2FF01}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
