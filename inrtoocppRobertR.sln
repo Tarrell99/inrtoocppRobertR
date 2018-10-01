@@ -29,6 +29,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "labOO", "labOO\labOO.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "week 6", "week 6\week 6.vcxproj", "{535ADB6C-4305-4874-908A-EDAD3BBBF0E8}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Num Guessing Game", "Num Guessing Game\Num Guessing Game.vcxproj", "{E7B1AF3B-EA98-474A-932C-0731B1A46520}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -141,6 +143,14 @@ Global
 		{535ADB6C-4305-4874-908A-EDAD3BBBF0E8}.Release|x64.Build.0 = Release|x64
 		{535ADB6C-4305-4874-908A-EDAD3BBBF0E8}.Release|x86.ActiveCfg = Release|Win32
 		{535ADB6C-4305-4874-908A-EDAD3BBBF0E8}.Release|x86.Build.0 = Release|Win32
+		{E7B1AF3B-EA98-474A-932C-0731B1A46520}.Debug|x64.ActiveCfg = Debug|x64
+		{E7B1AF3B-EA98-474A-932C-0731B1A46520}.Debug|x64.Build.0 = Debug|x64
+		{E7B1AF3B-EA98-474A-932C-0731B1A46520}.Debug|x86.ActiveCfg = Debug|Win32
+		{E7B1AF3B-EA98-474A-932C-0731B1A46520}.Debug|x86.Build.0 = Debug|Win32
+		{E7B1AF3B-EA98-474A-932C-0731B1A46520}.Release|x64.ActiveCfg = Release|x64
+		{E7B1AF3B-EA98-474A-932C-0731B1A46520}.Release|x64.Build.0 = Release|x64
+		{E7B1AF3B-EA98-474A-932C-0731B1A46520}.Release|x86.ActiveCfg = Release|Win32
+		{E7B1AF3B-EA98-474A-932C-0731B1A46520}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
