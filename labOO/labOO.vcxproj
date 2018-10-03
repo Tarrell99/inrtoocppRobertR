@@ -129,6 +129,7 @@
     <None Include="Stack.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="everything.txt" />
     <Text Include="Read me.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

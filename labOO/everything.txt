@@ -1,0 +1,11 @@
+Stack Class : has the the number of heros that will be fighting 
+the counter that willkeep up with who is in the fight .
+It also has  the stack top , pop , push , isEmpty , and isfull 
+these tell if the Hero is about to be on thr top and fight or 
+if he is about to get poped off andand not be able to fight.
+
+Game Class: it tells of all of the fighters and the win 
+coudions to finses the fight and what happens if someone dies.
+
+Hero Class : has the power mad the heath om it the damge is on 
+a random scond and can be 25-1 

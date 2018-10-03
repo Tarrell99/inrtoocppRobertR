@@ -48,5 +48,8 @@
     <Text Include="Read me.txt">
       <Filter>Source Files</Filter>
     </Text>
+    <Text Include="everything.txt">
+      <Filter>Source Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>
