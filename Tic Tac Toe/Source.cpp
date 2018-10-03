@@ -10,5 +10,5 @@ int main()
 	int choicePlace = 0;
 	int X = 0;
 	int O = 0;
-	system("pause");
+	system("pause"); 
 }
