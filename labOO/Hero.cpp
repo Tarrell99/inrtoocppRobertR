@@ -20,6 +20,8 @@ int Hero::GetHealth()
 	
 	return m_Health;
 }
+
+
 // gets the name form m_name
 void Hero::getName(const char* heroName)
 {
@@ -32,7 +34,7 @@ void Hero::sayName()
 }
 
 
-void Hero::Fight(Hero & other)
+void Hero::Fight(Hero& other)
 {
 	m_Power = rand() % 25 + 1;
 	other.TakeDamage(m_Power);

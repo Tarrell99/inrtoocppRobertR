@@ -1,0 +1,8 @@
+1. Create a small program that showcases inheritance, representing transport vehicles.
+2. Start off with a base class, TransportVehicle. Think about what properties are common
+to all transport vehicles.
+3. Derive classes from this, such as Car, Plane, Bike, etc. Give each derived class properties
+and functionality (it doesn't need to be fleshed out) that is unique to the derived class.
+4. Remember to place your class definitions in separate .h files and your function bodies in
+separate .cpp files
+5. Make proper use of the public, private and protected keywords
