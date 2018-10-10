@@ -1,16 +1,65 @@
 #pragma once
 #include <iostream>
 template<class Type>
-class Iterator
+class linkedListIterator
 {
 private:
-	nodeType<Type> current*
+	nodeType<Type>* current;
 
 public:
-	Iterator();
-	Iterator(nodeType<Type>);
+	linkedListIterator();
+	linkedListIterator(nodeType<Type>);
 	Type operator*();
 	Iterator<Type> operator++();
-	const bool operator == (const Iterator<Type>&);
-	const bool operator! = (const Iterator<Type>&);
+	const bool operator == (const linkedListIterator<Type>&);
+	const bool operator! = (const linkedListIterator<Type>&);
 };
+
+//////////////////////////////////////////////////////////////////////////////
+
+template<class Type>
+ linkedListIterator<Type>::linkedListIterator()
+{
+}
+
+template<class Type>
+ linkedListIterator<Type>::linkedListIterator(nodeType<Type>)
+{
+}
+
+template<class Type>
+ Type linkedListIterator<Type>::operator*()
+{
+	return Type();
+}
+
+template<class Type>
+linkedListIterator<Type> linkedListIterator<Type>::operator++()
+{
+	return linkedListIterator<Type>();
+}
+
+template<class Type>
+ const bool linkedListIterator<Type>::operator==(const linkedListIterator<Type>&)
+{
+	return false;
+}
+
+template<class Type>
+ const bool linkedListIterator<Type>::operator!=(const linkedListIterator<Type>&)
+{
+	return false;
+}
+
+template<class Type>
+ const bool linkedListIterator<Type>::operator==(const Iterator<Type>&)
+{
+	return false;
+}
+
+template<class Type>
+ const bool linkedListIterator<Type>::operator!=(const Iterator<Type>&)
+{
+	return false;
+}
+
