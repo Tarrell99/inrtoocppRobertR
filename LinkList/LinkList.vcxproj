@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{D798BBAC-4E8A-49B5-9A82-524D64E66FF5}</ProjectGuid>
-    <RootNamespace>Templates</RootNamespace>
+    <ProjectGuid>{BB0C47A8-1233-4C23-B4B6-EB12B3A56BFF}</ProjectGuid>
+    <RootNamespace>LinkList</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -115,8 +115,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="moringPromble.cpp" />
     <ClCompile Include="Source.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Iterator.h" />
+    <ClInclude Include="LinkList.h" />
+    <ClInclude Include="NodeType.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -3,7 +3,8 @@
 //1. Min
 //DESCRIPTION : Returns the lower of two values.
 //	INPUT : Two template arguments(a, b).
-//	OUTPUT : The lower of the two values a and b.
+//	OUTPUT : The lower of the two values a and b.
+
 template <typename T>
 T Min(T a, T b)
 {
