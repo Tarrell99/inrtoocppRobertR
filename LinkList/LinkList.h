@@ -43,6 +43,7 @@ template<class Type>
 template<class Type>
  void linkList<Type>::initializeList()
 {
+
 }
 
 template<class Type>
@@ -54,6 +55,7 @@ template<class Type>
 template<class Type>
  void linkList<Type>::print() const
 {
+
 }
 
 template<class Type>
@@ -65,6 +67,7 @@ template<class Type>
 template<class Type>
  void linkList<Type>::destroyList()
 {
+
 }
 
 template<class Type>
@@ -79,15 +82,13 @@ template<class Type>
 	return Type();
 }
 
+ template<class Type>
+ inline linkList<Type> linkList<Type>::end()
+ {
+	 return linkList<Type>();
+ }
 
-
-template<class Type>
-linkList<Type> linkList<Type>::end()
-{
-	return linkedListIterator<Type>();
-}
-
-template<class Type>
+ template<class Type>
  linkList<Type>::linkList()
 {
 }
