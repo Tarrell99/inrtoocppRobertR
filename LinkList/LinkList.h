@@ -91,14 +91,17 @@ template<class Type>
  template<class Type>
  linkList<Type>::linkList()
 {
+
 }
 
 template<class Type>
  linkList<Type>::linkList(const linkList<Type>&)
 {
+
 }
 
 template<class Type>
  void linkList<Type>::copyList(const linkList<Type>&)
 {
+
 }
