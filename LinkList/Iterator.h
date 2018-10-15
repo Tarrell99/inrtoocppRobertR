@@ -38,7 +38,7 @@ template<class Type>
 template<class Type>
  Iterator<Type> linkedListIterator<Type>::operator++()
 {
- 
+	
 	return Iterator<Type>();
 }
 
