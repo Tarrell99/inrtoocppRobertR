@@ -96,7 +96,7 @@ template<class Type>
  template<class Type>
  linkList<Type>::linkList()
 {
-
+  
 }
 
 template<class Type>

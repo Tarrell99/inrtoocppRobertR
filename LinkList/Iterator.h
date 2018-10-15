@@ -20,7 +20,7 @@ public:
 template<class Type>
  linkedListIterator<Type>::linkedListIterator()
 {
- 
+  
 }
 
 template<class Type>
@@ -38,18 +38,33 @@ template<class Type>
 template<class Type>
  Iterator<Type> linkedListIterator<Type>::operator++()
 {
+ 
 	return Iterator<Type>();
 }
 
 template<class Type>
  const bool linkedListIterator<Type>::operator==(const linkedListIterator<Type>&)
 {
- 
-	return false;
+	 if (linkedListIterator == linkedListIterator)
+	 {
+		 return true
+	 }
+
+	 else 
+	 {
+		 return false;
+	 }
 }
 
 template<class Type>
  const bool linkedListIterator<Type>::operator!=(const linkedListIterator<Type>&)
 {
-	return false;
+	 if (linkedListIterator != linkedListIterator)
+	 {
+		 return true;
+	 }
+	 else
+	 {
+		 return false;
+	 }
 }
