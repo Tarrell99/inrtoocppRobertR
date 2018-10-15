@@ -21,5 +21,8 @@
     <ClCompile Include="week 5 test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="morging prog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
