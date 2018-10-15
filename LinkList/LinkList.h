@@ -49,13 +49,17 @@ template<class Type>
 template<class Type>
  bool linkList<Type>::isEmptyList() const
 {
+	 if (isEmptyList = 0)
+	 {
+		 return true;
+	 }
 	return false;
 }
 
 template<class Type>
  void linkList<Type>::print() const
 {
-
+	 
 }
 
 template<class Type>
@@ -83,8 +87,9 @@ template<class Type>
 }
 
  template<class Type>
- inline linkList<Type> linkList<Type>::end()
+  linkList<Type> linkList<Type>::end()
  {
+	 
 	 return linkList<Type>();
  }
 

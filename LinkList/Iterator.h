@@ -7,12 +7,12 @@ private:
 	nodeType<Type>* current;
 
 public:
-	linkedListIterator();
-	linkedListIterator(nodeType<Type>);
-	Type operator*();
-	Iterator<Type> operator++();
-	const bool operator == (const linkedListIterator<Type>&);
-	const bool operator! = (const linkedListIterator<Type>&);
+	linkedListIterator();//counstor 
+	linkedListIterator(nodeType<Type>);// counstor where set curnt to node 
+	Type operator*();// derues returns something
+	Iterator<Type> operator++();// move the dam thing
+	const bool operator == (const linkedListIterator<Type>&);// combares to see if its ==
+	const bool operator! = (const linkedListIterator<Type>&);// opustof last one
 };
 
 //////////////////////////////////////////////////////////////////////////////
@@ -20,7 +20,7 @@ public:
 template<class Type>
  linkedListIterator<Type>::linkedListIterator()
 {
-
+ 
 }
 
 template<class Type>
@@ -44,6 +44,7 @@ template<class Type>
 template<class Type>
  const bool linkedListIterator<Type>::operator==(const linkedListIterator<Type>&)
 {
+ 
 	return false;
 }
 
