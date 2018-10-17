@@ -18,5 +18,8 @@
     <ClCompile Include="Moring pomble 9.28.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="moring promble1017.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
