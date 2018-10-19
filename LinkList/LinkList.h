@@ -22,7 +22,7 @@ public:
 	 void insertLast(const Type&) = 0;// inserts the node in the end of the list
 	 void deletNode(const Type&) = 0;// delet one node with the arugment in it
 	 linkList<Type> end();//
-	 linkList();
+	 linkList(); 
 	 linkList(const linkList<Type>&);
 
 private:
