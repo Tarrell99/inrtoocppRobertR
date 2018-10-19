@@ -29,8 +29,5 @@
     <ClInclude Include="Iterator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="LinkListN.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>

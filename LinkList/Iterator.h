@@ -1,5 +1,5 @@
 #pragma once
-#include <iostream>
+#include"NodeType.h"
 template<class Type>
 class linkedListIterator
 {
@@ -8,48 +8,49 @@ private:
 
 public:
 	linkedListIterator();//counstor 
-	linkedListIterator(nodeType<Type>);// counstor where set curnt to node 
+	linkedListIterator(nodeType<Type>*);// counstor where set curnt to node 
 	Type operator*();// derues returns something
-	Iterator<Type> operator++();// move the dam thing
+    linkedListIterator<Type> operator++();// move the  thing
 	const bool operator == (const linkedListIterator<Type>&);// combares to see if its ==
-	const bool operator! = (const linkedListIterator<Type>&);// opustof last one
+	const bool operator != (const linkedListIterator<Type>&);// opustof last one
 };
 
 //////////////////////////////////////////////////////////////////////////////
 
 template<class Type>
  linkedListIterator<Type>::linkedListIterator()
-{
-  
+{ // what the current is pointing at.
+	 current = nullptr;
 }
 
 template<class Type>
- linkedListIterator<Type>::linkedListIterator(nodeType<Type>)
+ linkedListIterator<Type>::linkedListIterator(nodeType<Type>* Node)
 {
-
+	 current = Node;
 }
 
 template<class Type>
  Type linkedListIterator<Type>::operator*()
 {
-	return Type();
+//current->info what i need to return.
+		 return current->info;
 }
 
 template<class Type>
- Iterator<Type> linkedListIterator<Type>::operator++()
+ linkedListIterator<Type> linkedListIterator<Type>::operator++()
 {
 	
-	return Iterator<Type>();
+	 current = current->link;
+	 return *this;
 }
 
 template<class Type>
- const bool linkedListIterator<Type>::operator==(const linkedListIterator<Type>&)
+ const bool linkedListIterator<Type>::operator==(const linkedListIterator<Type>& Node)
 {
-	 if (linkedListIterator == linkedListIterator)
+	 if (this->current == Node.current)
 	 {
-		 return true
+		 return true;
 	 }
-
 	 else 
 	 {
 		 return false;
@@ -57,9 +58,9 @@ template<class Type>
 }
 
 template<class Type>
- const bool linkedListIterator<Type>::operator!=(const linkedListIterator<Type>&)
+ const bool linkedListIterator<Type>::operator!=(const linkedListIterator<Type>& Node)
 {
-	 if (linkedListIterator != linkedListIterator)
+	 if ( this.current != Node.current )
 	 {
 		 return true;
 	 }
