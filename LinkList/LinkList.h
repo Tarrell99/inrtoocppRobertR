@@ -26,7 +26,7 @@ public:
 	 linkList(const linkList<Type>&);
 
 private:
-	void copyList(const linkList<Type>&);
+	void copyList(const linkList<Type>&);// function to make information from one list to a other
 };
 
 
@@ -37,53 +37,61 @@ private:
 template<class Type>
  const linkList<Type>& linkList<Type>::operator=(const linkList<Type>&)
 {
-	// TODO: insert return statement here
+	 return first->info && first->link;
 }
 
 template<class Type>
  void linkList<Type>::initializeList()
 {
-
+	 first->nullpter;
 }
 
 template<class Type>
  bool linkList<Type>::isEmptyList() const
 {
-	 if (isEmptyList = 0)
+	 if (first == NULL && last == NULL)
 	 {
-		 return true;
+		 count = 0;
+		 return count;
 	 }
-	return false;
+	 else
+	 {
+		 return false;
+	 }
 }
 
 template<class Type>
  void linkList<Type>::print() const
 {
-	 
+	 std::cout << nodeType;
 }
 
 template<class Type>
  int linkList<Type>::length() const
 {
-	return 0;
+	 int howMany;
+	 howMany = conut++;
+	return  howMany;
 }
 
 template<class Type>
  void linkList<Type>::destroyList()
 {
-
+	 
+	 delete first->info && delete last->info;
+	 return first->info && last->info;
 }
 
 template<class Type>
  Type linkList<Type>::front() const
 {
-	return Type();
+	return first ->link;
 }
 
 template<class Type>
  Type linkList<Type>::back() const
 {
-	return Type();
+	return last ->link;
 }
 
  

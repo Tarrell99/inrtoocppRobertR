@@ -119,6 +119,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Iterator.h" />
+    <ClInclude Include="lincklistEX.h" />
     <ClInclude Include="LinkList.h" />
     <ClInclude Include="NodeType.h" />
   </ItemGroup>
