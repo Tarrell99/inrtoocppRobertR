@@ -9,7 +9,7 @@ protected:
 	nodeType<Type>* last;
 
 public:
-	const linkList<Type>& operator = (const linkList<Type>&);
+	const linkList<Type>& operator = (const linkList<Type>&);// making both the of the sides = by setting themto each other. 
 	void initializeList();// set the member verble to something 
 	 bool isEmptyList() const;// return the count to 0 if the list is empty
 	 void print() const;// print all vale in each node
@@ -37,7 +37,8 @@ private:
 template<class Type>
  const linkList<Type>& linkList<Type>::operator=(const linkList<Type>&)
 {
-	 return first->info && first->link;
+{
+	 linkList<Type>&first == operator first && linkList<Type>&last == operator last
 }
 
 template<class Type>
