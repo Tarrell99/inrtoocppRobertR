@@ -14,10 +14,18 @@ public:
 };
 //////////////////////////////////////////////////////////////////////
 template<class type>
- bool linklistEX<type>::search(const type &) const
+ bool linklistEX<type>::search(const type & found) const
 {
+	 linklistEX<type>* Lookfor;
+	 if (Lookfor->found)
+	 {
 
-	return false;
+		 return true;
+	 }
+	 else
+	 {
+		 return false;
+	 }
 }
 
 template<class type>
@@ -44,13 +52,21 @@ template<class type>
 {
 	 // when the function is called check to see if the noNode type is == to one of the nodetypes and 
 	 // delet that node.
-	 nodeType<type>* Head;
-	 nodeType<type>* tell;
+	 linklistEX<type>* Head;
+	 linklistEX<type>* tell;
 	 Head->this first;
-	 tell->this first;
+	 Tell->this first;
 	 if (Head->noNode)
 	 {
+		 Tell++
 		 delete noNode;
 	 }
-	 
+	 else
+	 {
+		 while (Tell->Head)
+		 {
+			 Head++;
+			 Tell++;
+		 }
+	 }
 }

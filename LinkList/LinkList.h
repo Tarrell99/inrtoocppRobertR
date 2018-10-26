@@ -96,26 +96,27 @@ Type linkList<Type>::back() const
  template<class Type>
  linkedListIterator<Type> linkList<Type>::begin()
  {
-	  return 
+	 return first->info;
  }
 
  template<class Type>
  linkedListIterator<Type> linkList<Type>::end()
  {
 
-	 //return linkedListIterato()->last;
+	 return last->info;
  }
 
  template<class Type>
  linkList<Type>::linkList()
 {
-  
+	 first->nullptr;
+	 last->nullptr;
 }
 
 template<class Type>
  linkList<Type>::linkList(const linkList<Type>&)
 {
-
+	 count = nullptr;
 }
 
 template<class Type>
