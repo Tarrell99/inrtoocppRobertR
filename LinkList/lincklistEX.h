@@ -17,7 +17,7 @@ template<class type>
  bool linklistEX<type>::search(const type & found) const
 {
 	 linklistEX<type>* Lookfor;
-	 if (Lookfor->found)
+	 if (Lookfor == found)
 	 {
 
 		 return true;
@@ -52,18 +52,17 @@ template<class type>
 {
 	 // when the function is called check to see if the noNode type is == to one of the nodetypes and 
 	 // delet that node.
-	 linklistEX<type>* Head;
-	 linklistEX<type>* tell;
-	 Head->this first;
-	 Tell->this first;
-	 if (Head->noNode)
+	 nodeType<type>* Head = first;
+	 nodeType<type>* Tell = Head;
+	 
+	 if (Head == noNode)
 	 {
-		 Tell++
-		 delete noNode;
+		 Tell++;
+		 
 	 }
 	 else
 	 {
-		 while (Tell->Head)
+		 while (Tell == Head)
 		 {
 			 Head++;
 			 Tell++;

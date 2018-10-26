@@ -60,15 +60,13 @@ bool linkList<Type>::isEmptyList() const
 template<class Type>
 void linkList<Type>::print() const
 {
-	std::cout << nodeType;
+	
 }
 
 template<class Type>
 int linkList<Type>::length() const
 {
-	int howMany;
-	howMany = conut++;
-	return  howMany;
+	return  count;
 }
 
 template<class Type>
@@ -109,8 +107,8 @@ Type linkList<Type>::back() const
  template<class Type>
  linkList<Type>::linkList()
 {
-	 first->nullptr;
-	 last->nullptr;
+	 first = nullptr;
+	 last = nullptr;
 }
 
 template<class Type>
