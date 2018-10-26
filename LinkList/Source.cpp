@@ -23,8 +23,10 @@ int main()
 	nodeType<int>* C = new nodeType<int>{ 4747 };
 
 	linklistEX<int>* list = new linklistEX<int>;
-	list->insertFirst(A->info);
-	list->isEmptyList();
 	
+	list->insertFirst(A->info);
+	linklistEX<int>* list2 = new linklistEX<int>;
+	list2 = list;
+	list->print();
 		system("pause");
 }

@@ -36,6 +36,7 @@ template<class Type>
 const linkList<Type>& linkList<Type>::operator=(const linkList<Type>& copyNodeList)
 {
 	this->copyList(copyNodeList);
+	return*this;
 }
 
 template<class Type>
@@ -133,5 +134,5 @@ template<class Type>
 	 {
 		 insertFirst(list);
 	 }
-
+	 destroyList();
 }
