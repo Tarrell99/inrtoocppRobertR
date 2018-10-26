@@ -44,6 +44,13 @@ template<class type>
 {
 	 // when the function is called check to see if the noNode type is == to one of the nodetypes and 
 	 // delet that node.
-
+	 nodeType<type>* Head;
+	 nodeType<type>* tell;
+	 Head->this first;
+	 tell->this first;
+	 if (Head->noNode)
+	 {
+		 delete noNode;
+	 }
 	 
 }

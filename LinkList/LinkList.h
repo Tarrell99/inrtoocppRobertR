@@ -24,7 +24,7 @@ public:
 	linkedListIterator<Type> begin();
 	linkedListIterator<Type> end();
 	linkList();
-	linkList(const linkList<Type>&);
+	linkList(const linkList<Type>&); 
 
 private:
 	void copyList(const linkList<Type>&);// function to make information from one list to a other
