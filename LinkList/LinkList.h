@@ -42,6 +42,8 @@ template<class Type>
 void linkList<Type>::initializeList()
 {
 	first->nullpter;
+	last->nullpter;
+	count = 0;
 }
 
 template<class Type>
@@ -60,7 +62,12 @@ bool linkList<Type>::isEmptyList() const
 template<class Type>
 void linkList<Type>::print() const
 {
-	
+	nodeType<Type>* printMe = this->first;
+	while (printMe != nullptr)
+	{
+		printMe = printMe->link;
+		std::cout << printMe << std::endl;
+	}
 }
 
 template<class Type>
@@ -72,9 +79,12 @@ int linkList<Type>::length() const
 template<class Type>
 void linkList<Type>::destroyList()
 {
-
-	delete first->info && delete last->info;
-	return first->info && last->info;
+	nodeType<Type>* destroy = this->first;
+	while (destroy = destory->link)
+	{
+		delete destroy->link;
+		delete first->info && delete last->info;
+	}
 }
 
 template<class Type>
@@ -88,8 +98,6 @@ Type linkList<Type>::back() const
 {
 	return last->link;
 }
-
- 
 
  template<class Type>
  linkedListIterator<Type> linkList<Type>::begin()
@@ -114,11 +122,16 @@ Type linkList<Type>::back() const
 template<class Type>
  linkList<Type>::linkList(const linkList<Type>&)
 {
-	 count = nullptr;
+	 count = 0;
 }
 
 template<class Type>
  void linkList<Type>::copyList(const linkList<Type>& list)
 {
-	 this->initializeList(list);
+	 nodeType<Type>* copyTheNodes;
+	 while (copyTheNodes != nullptr)
+	 {
+		 insertFirst(list);
+	 }
+
 }
