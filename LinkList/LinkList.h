@@ -66,8 +66,9 @@ void linkList<Type>::print() const
 	nodeType<Type>* printMe = this->first;
 	while (printMe != nullptr)
 	{
+		std::cout << printMe->info << std::endl;
 		printMe = printMe->link;
-		std::cout << printMe << std::endl;
+		
 	}
 }
 

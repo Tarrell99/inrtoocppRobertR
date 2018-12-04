@@ -46,7 +46,7 @@ template<class type>
 {
 	 nodeType<type>* pointer2 = new nodeType<type>;
 	 pointer2->info = lastNode;
-	this->last->link = pointer2 ;
+	this->last->link = pointer2;
 	 this->last = this->last->link;
  
 }
