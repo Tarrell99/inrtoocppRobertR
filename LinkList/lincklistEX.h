@@ -37,18 +37,42 @@ template<class type>
 {
 	 nodeType<type>* pointer = new nodeType<type>;
 	 pointer->info = firstNode;
-	 pointer->link = this->first;
-	 this->first = pointer;
+	
+
+	 if (this->isEmptyList())
+	 {
+		 this->first = pointer;
+		 this->last = pointer;
+	 }
+	 else
+	 {
+		 pointer->link = this->first;
+		 this->first = pointer;
+	 }
+	 
+	 this->count++;
 }
 
 template<class type>
  void linklistEX<type>::insertLast(const type & lastNode)
 {
+	 
+	
+	 
 	 nodeType<type>* pointer2 = new nodeType<type>;
 	 pointer2->info = lastNode;
-	this->last->link = pointer2;
-	 this->last = this->last->link;
- 
+	 if (this->isEmptyList())
+	 {
+		 this->first = pointer2;
+		 this->last = pointer2;
+	 }
+	 else
+	 {
+		 this->last->link = pointer2;
+		 this->last = this->last->link;
+	 }
+	 this->last->link = nullptr;
+	 this->count++;
 }
 
 template<class type>
