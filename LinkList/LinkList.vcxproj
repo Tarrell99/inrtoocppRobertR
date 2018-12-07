@@ -122,6 +122,7 @@
     <ClInclude Include="lincklistEX.h" />
     <ClInclude Include="LinkList.h" />
     <ClInclude Include="NodeType.h" />
+    <ClInclude Include="nodeType2.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
