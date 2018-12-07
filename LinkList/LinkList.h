@@ -82,7 +82,7 @@ template<class Type>
 void linkList<Type>::destroyList()
 {
 	nodeType<Type>* destroy = this->first;
-	while (destroy = destory->link)
+	while (destroy == destory->link)
 	{
 		delete destroy->link;
 		delete first->info && delete last->info;
@@ -130,10 +130,13 @@ template<class Type>
 template<class Type>
  void linkList<Type>::copyList(const linkList<Type>& list)
 {
-	 nodeType<Type>* copyTheNodes;
-	 while (copyTheNodes != nullptr)
+	 nodeType<Type>* copyTheNodes = (list.first);
+	 for (int i = 0; i < count; i++)
 	 {
-		 insertFirst(list);
+		 insertLast(copyTheNodes->info);
+		copyTheNodes = copyTheNodes->link;
 	 }
-	 destroyList();
+
+	  destroyList(list);
+	
 }
