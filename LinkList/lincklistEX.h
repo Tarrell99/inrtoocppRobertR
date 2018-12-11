@@ -11,6 +11,7 @@ public:
 	void insertLast(const type&);
 	void deletNode(const type&);
 
+
 };
 //////////////////////////////////////////////////////////////////////
 template<class type>
