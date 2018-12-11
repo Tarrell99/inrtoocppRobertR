@@ -42,8 +42,8 @@ const linkList<Type>& linkList<Type>::operator=(const linkList<Type>& copyNodeLi
 template<class Type>
 void linkList<Type>::initializeList()
 {
-	first->nullpter;
-	last->nullpter;
+	first = nullptr;
+	last = nullptr;
 	count = 0;
 }
 
@@ -81,11 +81,24 @@ int linkList<Type>::length() const
 template<class Type>
 void linkList<Type>::destroyList()
 {
-	nodeType<Type>* destroy = this->first;
-	while (destroy == destory->link)
+	nodeType<Type>* destroy = new nodeType<Type>;
+	int countCopy = count;
+	while (destroy != nullptr)
 	{
-		delete destroy->link;
-		delete first->info && delete last->info;
+		destroy = this->first;
+		if (count == 1)
+		{
+			delete first;
+			initializeList();
+			return;
+		}
+		else
+		{
+			first = first->link;
+			delete destroy;
+			count--;
+		}
+		
 	}
 }
 
