@@ -64,11 +64,12 @@ template<class Type>
 void linkList<Type>::print() const
 {
 	nodeType<Type>* printMe = this->first;
-	while (printMe != nullptr)
+	int P = 0;
+	while (P < count)
 	{
 		std::cout << printMe->info << std::endl;
 		printMe = printMe->link;
-		
+		P++;
 	}
 }
 

@@ -77,24 +77,52 @@ template<class type>
 }
 
 template<class type>
- void linklistEX<type>::deletNode(const type & noNode)
+void linklistEX<type>::deletNode(const type & noNode)
 {
-	 // when the function is called check to see if the noNode type is == to one of the nodetypes and 
-	 // delet that node.
-	 nodeType<type>* Head = this->first;
-	 nodeType<type>* Tell = Head;
-	 
-	 if (Head->info == noNode)
-	 {
-		 Tell = Tell->link;
-		 
-	 }
-	 else
-	 {
-		 while (Tell == Head)
-		 {
-			 Head = Head->link;
-			 Tell = Tell->link;
-		 }
-	 }
+	// when the function is called check to see if the noNode type is == to one of the nodetypes and 
+	// delet that node.
+	nodeType<type>* Head;
+	nodeType<type>* Tell;
+
+	if (this->count == 1)
+	{
+		delete this->first;
+		this->count--;
+		return;
+	}
+	Head = this->first;
+	Tell = this->first;
+	int temp = 0;
+	while (temp < this->count)
+	{
+		if (Head->info == noNode)
+		{
+			this->first = this->first->link;
+			delete Head;
+			this->count--;
+			return;
+		}
+		if (Head->info != noNode)
+		{
+			Head = Head->link;
+			if (Head == this->last)
+			{
+				this->last = Tell;
+				Tell->link = nullptr;
+				delete Head;
+				this->count--;
+				return;
+			}
+			if (Head->info == noNode)
+			{
+				Tell->link = Head->link;
+				delete Head;
+				this->count--;
+				return;
+			}
+			Tell = Tell->link;
+		}
+
+				
+	}
 }

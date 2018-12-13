@@ -20,8 +20,12 @@ int main()
 
 	linklistEX<int>* list2 = new linklistEX<int>;
 	list2 = list;
+
 	list->print();
 	
+	list->deletNode(A->info);
+	list->print();
 	list->destroyList();
+	list->print();
 		system("pause");
 }
